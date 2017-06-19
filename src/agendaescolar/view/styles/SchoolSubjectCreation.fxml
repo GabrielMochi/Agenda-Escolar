@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="vBox" alignment="CENTER" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agendaescolar.controller.SchoolSubjectCreationController">
+   <children>
+      <Label text="Nova matéria" textAlignment="CENTER">
+         <VBox.margin>
+            <Insets bottom="30.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font></Label>
+      <TextField fx:id="nameTextField" alignment="CENTER" promptText="Nome da matéria">
+         <VBox.margin>
+            <Insets bottom="15.0" left="250.0" right="250.0" />
+         </VBox.margin>
+      </TextField>
+      <HBox alignment="CENTER" prefHeight="42.0" prefWidth="296.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleCreateButton" text="Criar">
+               <HBox.margin>
+                  <Insets right="7.5" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleCancelButton" text="Cancelar">
+               <HBox.margin>
+                  <Insets left="7.5" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets left="125.0" right="125.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

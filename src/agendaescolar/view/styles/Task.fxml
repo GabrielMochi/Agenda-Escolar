@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+    <stylesheets>
+        <URL value="@task.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Tarefa">
+         <font>
+            <Font name="Verdana" size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="notesTextArea" editable="false" layoutX="23.0" layoutY="230.0" prefHeight="156.0" prefWidth="200.0" />
+      <GridPane layoutX="23.0" layoutY="65.0" prefHeight="75.0" prefWidth="200.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="61.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="139.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Seção:" />
+            <Label text="Lançada:" GridPane.rowIndex="1" />
+            <Label text="Entrega:" GridPane.rowIndex="2" />
+            <Label fx:id="sectionLabel" text="Label" GridPane.columnIndex="1" />
+            <Label fx:id="postLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="deliveryLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <Label layoutX="23.0" layoutY="205.0" text="Observações: " />
+      <TextArea fx:id="descriptionTextArea" editable="false" layoutX="234.0" layoutY="40.0" prefHeight="346.0" prefWidth="144.0" />
+      <Label layoutX="234.0" layoutY="15.0" text="Descrição:" />
+   </children>
+</AnchorPane>

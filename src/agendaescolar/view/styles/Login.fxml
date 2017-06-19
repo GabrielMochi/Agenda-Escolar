@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="agendaescolar.controller.LoginController">
+   <children>
+      <Group layoutX="-7.0" layoutY="-14.0">
+         <children>
+            <Button fx:id="loginButton" contentDisplay="CENTER" layoutX="241.0" layoutY="286.0" mnemonicParsing="false" onAction="#handleLoginButton" text="Login" />
+            <Button fx:id="resgisterButton" layoutX="312.0" layoutY="286.0" mnemonicParsing="false" onAction="#handleRegisterButton" text="Registrar" />
+         </children>
+      </Group>
+      <ImageView fitHeight="127.0" fitWidth="108.0" layoutX="246.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+              <Image url="@../img/LoginIcon.png" />
+          </image>
+      </ImageView>
+      <TextField fx:id="enchiridionTextField" layoutX="214.0" layoutY="188.0" prefHeight="25.0" prefWidth="174.0" promptText="Prontuário">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <PasswordField fx:id="passwordTextField" layoutX="213.0" layoutY="226.0" prefHeight="25.0" prefWidth="174.0" promptText="Senha" />
+   </children>
+</AnchorPane>
